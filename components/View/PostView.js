@@ -12,6 +12,7 @@ import OptionView from "./OptionView";
 import DoubleClick from "react-native-double-tap";
 
 const PostView = ({ Post, idx }) => {
+  const [texts, setTexts] = React.useState(Post.caption.substring(0, 100));
   return (
     <>
       <View>
@@ -56,7 +57,27 @@ const PostView = ({ Post, idx }) => {
         <View style={{ marginTop: 35 }}>
           <OptionView />
         </View>
-        <Text style={styles.Liketext}>{Post.userPostLike} Likes</Text>
+        <View>
+          <Text style={styles.Liketext}>{Post.userPostLike} Likes</Text>
+        </View>
+        <View>
+          <Text style={styles.Liketext}>{Post.name}</Text>
+          {Post.caption.length > 50 ? (
+            <Text style={styles.CoptionText}>
+              {texts} ...
+              <Text
+                style={styles.moreText}
+                onPress={() => {
+                  setTexts(Post.caption.substring(0, 10000000));
+                }}
+              >
+                <Text> more</Text>
+              </Text>
+            </Text>
+          ) : (
+            <Text style={styles.CoptionText}>{texts}</Text>
+          )}
+        </View>
       </View>
     </>
   );
@@ -98,5 +119,13 @@ const styles = StyleSheet.create({
     marginLeft: 10,
     fontWeight: "bold",
     marginTop: 10
+  },
+  CoptionText: {
+    color: "white",
+    marginLeft: 10,
+    marginTop: 2
+  },
+  moreText: {
+    color: "#eee"
   }
 });

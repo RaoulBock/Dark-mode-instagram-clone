@@ -130,7 +130,8 @@ export const dataset = [
     profilePicture:
       "https://i.kym-cdn.com/entries/icons/facebook/000/034/213/cover2.jpg",
     userPost: "https://miro.medium.com/max/1400/1*R4mzP3laE4-GVLJSIuV6yg.jpeg",
-    userPostLike: 140
+    userPostLike: 140,
+    caption: "React is just the best to start programming."
   },
   {
     id: 2,
@@ -138,7 +139,9 @@ export const dataset = [
     profilePicture:
       "https://pbs.twimg.com/profile_images/863359605086314496/ynhvFRnB_400x400.jpg",
     userPost: "https://miro.medium.com/max/1400/1*R4mzP3laE4-GVLJSIuV6yg.jpeg",
-    userPostLike: 10140
+    userPostLike: 10140,
+    caption:
+      "what is better then react, if you have any thoughts please comment bellow and share your thoughts. Because what i think is that you can do so much more with react then with other programming languages. "
   },
   {
     id: 3,
@@ -146,7 +149,9 @@ export const dataset = [
     profilePicture:
       "https://pbs.twimg.com/profile_images/863359605086314496/ynhvFRnB_400x400.jpg",
     userPost: "https://miro.medium.com/max/1400/1*R4mzP3laE4-GVLJSIuV6yg.jpeg",
-    userPostLike: 1400
+    userPostLike: 1400,
+    caption:
+      "I just dropped my new youtube video, link in by Bio check it out and dont forget to leave a like and subscribe"
   },
   {
     id: 4,
@@ -154,7 +159,9 @@ export const dataset = [
     profilePicture:
       "https://pbs.twimg.com/profile_images/863359605086314496/ynhvFRnB_400x400.jpg",
     userPost: "https://miro.medium.com/max/1400/1*R4mzP3laE4-GVLJSIuV6yg.jpeg",
-    userPostLike: 1200
+    userPostLike: 1200,
+    caption:
+      "I just dropped my new youtube video, link in by Bio check it out and dont forget to leave a like and subscribe"
   },
   {
     id: 5,
@@ -162,7 +169,8 @@ export const dataset = [
     profilePicture:
       "https://pbs.twimg.com/profile_images/863359605086314496/ynhvFRnB_400x400.jpg",
     userPost: "https://miro.medium.com/max/1400/1*R4mzP3laE4-GVLJSIuV6yg.jpeg",
-    userPostLike: 7200
+    userPostLike: 7200,
+    caption: "I just "
   },
   {
     id: 6,
@@ -170,6 +178,8 @@ export const dataset = [
     profilePicture:
       "https://pbs.twimg.com/profile_images/863359605086314496/ynhvFRnB_400x400.jpg",
     userPost: "https://miro.medium.com/max/1400/1*R4mzP3laE4-GVLJSIuV6yg.jpeg",
-    userPostLike: 9200
+    userPostLike: 9200,
+    caption:
+      "I just dropped my new youtube video, link in by Bio check it out and dont forget to leave a like and subscribe"
   }
 ];
