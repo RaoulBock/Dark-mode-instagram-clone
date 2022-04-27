@@ -61,7 +61,7 @@ const PostView = ({ Post, idx }) => {
           <Text style={styles.Liketext}>{Post.userPostLike} Likes</Text>
         </View>
         <View>
-          <Text style={styles.Liketext}>{Post.name}</Text>
+          <Text style={styles.nameText}>{Post.name}</Text>
           {Post.caption.length > 50 ? (
             <Text style={styles.CoptionText}>
               {texts} ...
@@ -77,6 +77,11 @@ const PostView = ({ Post, idx }) => {
           ) : (
             <Text style={styles.CoptionText}>{texts}</Text>
           )}
+        </View>
+        <View style={styles.commentSection}>
+          <TouchableOpacity>
+            <Text>View all comments</Text>
+          </TouchableOpacity>
         </View>
       </View>
     </>
@@ -122,10 +127,14 @@ const styles = StyleSheet.create({
   },
   CoptionText: {
     color: "white",
-    marginLeft: 10,
-    marginTop: 2
+    marginLeft: 10
   },
   moreText: {
     color: "#eee"
+  },
+  nameText: {
+    color: "white",
+    fontWeight: "bold",
+    marginLeft: 10
   }
 });

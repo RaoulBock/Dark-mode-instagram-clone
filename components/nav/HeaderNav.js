@@ -5,7 +5,7 @@ import { APP_ICONS } from "../../context/settings";
 const HeaderNav = () => {
   return (
     <View style={styles.headerGrid}>
-      <Text style={styles.text}>{APP_ICONS.LOGO} Gram</Text>
+      <Text style={styles.text}>{APP_ICONS.LOGO} Instagram</Text>
       <View style={styles.headerMenu}>
         <TouchableOpacity>{APP_ICONS.PLUS}</TouchableOpacity>
         <TouchableOpacity>{APP_ICONS.MESSAGE}</TouchableOpacity>
