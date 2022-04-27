@@ -12,7 +12,10 @@ import React from "react";
 const StatusView = ({ Status }) => {
   return (
     <TouchableOpacity style={styles.statusView}>
-      <Image source={{ uri: Status.image }} style={styles.statusImage} />
+      <Image
+        source={{ uri: Status.profilePicture }}
+        style={styles.statusImage}
+      />
       <Text style={styles.text}>{Status.name.substring(0, 10)} ...</Text>
     </TouchableOpacity>
   );

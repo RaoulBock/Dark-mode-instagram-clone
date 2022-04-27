@@ -78,40 +78,41 @@ export const APP_ICONS = {
 
 export const APP_STYLE = {};
 
-export const StatusDataset = [
+export const dataset = [
   {
     id: 1,
     name: "Raoul Anthony New Bock",
-    image: "https://i.kym-cdn.com/entries/icons/facebook/000/034/213/cover2.jpg"
+    profilePicture:
+      "https://i.kym-cdn.com/entries/icons/facebook/000/034/213/cover2.jpg"
   },
   {
     id: 2,
     name: "This is not Bock",
-    image:
+    profilePicture:
       "https://pbs.twimg.com/profile_images/863359605086314496/ynhvFRnB_400x400.jpg"
   },
   {
     id: 3,
     name: "Why are you Bock",
-    image:
+    profilePicture:
       "https://pbs.twimg.com/profile_images/863359605086314496/ynhvFRnB_400x400.jpg"
   },
   {
     id: 4,
     name: "Maaaaan Bock",
-    image:
+    profilePicture:
       "https://pbs.twimg.com/profile_images/863359605086314496/ynhvFRnB_400x400.jpg"
   },
   {
     id: 5,
     name: "baddie Bock",
-    image:
+    profilePicture:
       "https://pbs.twimg.com/profile_images/863359605086314496/ynhvFRnB_400x400.jpg"
   },
   {
     id: 6,
     name: "pac Bock",
-    image:
+    profilePicture:
       "https://pbs.twimg.com/profile_images/863359605086314496/ynhvFRnB_400x400.jpg"
   }
 ];

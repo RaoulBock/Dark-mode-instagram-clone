@@ -11,7 +11,7 @@ import React from "react";
 import BottomNav from "../components/nav/BottomNav";
 import HeaderNav from "../components/nav/HeaderNav";
 
-import { StatusDataset } from "../context/settings";
+import { dataset } from "../context/settings";
 import { styleProps } from "react-native-web/dist/cjs/modules/forwardedProps";
 import StatusView from "../components/View/StatusView";
 
@@ -38,7 +38,7 @@ const HomeScreen = () => {
                 />
                 <Text style={styles.text}>Your status</Text>
               </TouchableOpacity>
-              {StatusDataset.map((Status, idx) => (
+              {dataset.map((Status, idx) => (
                 <StatusView Status={Status} key={idx} />
               ))}
             </ScrollView>
