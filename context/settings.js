@@ -1,6 +1,6 @@
 import React from "react";
 
-import { AntDesign } from "react-native-vector-icons";
+import { AntDesign, Ionicons } from "react-native-vector-icons";
 
 export const APP_PAGES = {
   HOME: "HOME",
@@ -80,6 +80,42 @@ export const APP_ICONS = {
       style={{
         color: "white",
         fontSize: 28
+      }}
+    />
+  ),
+  OPTIONSHEART: (
+    <AntDesign
+      name="hearto"
+      style={{
+        color: "white",
+        fontSize: 25
+      }}
+    />
+  ),
+  OPTIONSMESSAGE: (
+    <AntDesign
+      name="message1"
+      style={{
+        color: "white",
+        fontSize: 25
+      }}
+    />
+  ),
+  OPTIONSBOOKMARK: (
+    <AntDesign
+      name="staro"
+      style={{
+        color: "white",
+        fontSize: 25
+      }}
+    />
+  ),
+  OPTIONSSHARE: (
+    <Ionicons
+      name="share-outline"
+      style={{
+        color: "white",
+        fontSize: 22
       }}
     />
   )

@@ -8,6 +8,8 @@ import {
 } from "react-native";
 import React from "react";
 import { APP_ICONS } from "../../context/settings";
+import OptionView from "./OptionView";
+import DoubleClick from "react-native-double-tap";
 
 const PostView = ({ Post, idx }) => {
   return (
@@ -36,12 +38,23 @@ const PostView = ({ Post, idx }) => {
             {APP_ICONS.VIRTICALDOTS}
           </TouchableOpacity>
         </View>
-        <View style={styles.PostViewPosts}>
-          <Image
-            source={{ uri: Post.userPost }}
-            key={idx}
-            style={styles.PostImagePosts}
-          />
+        <View style={styles.PostViewPosts} onPress={() => console.log("liked")}>
+          <DoubleClick
+            doubleTap={() => {
+              console.log("double tap");
+            }}
+            delay={200}
+          >
+            <Image
+              source={{ uri: Post.userPost }}
+              key={idx}
+              style={styles.PostImagePosts}
+              resizeMode="cover"
+            />
+          </DoubleClick>
+        </View>
+        <View style={{ marginTop: 20 }}>
+          <OptionView />
         </View>
       </View>
     </>
