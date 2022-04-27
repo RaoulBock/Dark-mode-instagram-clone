@@ -14,6 +14,7 @@ import HeaderNav from "../components/nav/HeaderNav";
 import { dataset } from "../context/settings";
 import { styleProps } from "react-native-web/dist/cjs/modules/forwardedProps";
 import StatusView from "../components/View/StatusView";
+import PostView from "../components/View/PostView";
 
 const HomeScreen = () => {
   return (
@@ -43,6 +44,9 @@ const HomeScreen = () => {
               ))}
             </ScrollView>
           </View>
+          {dataset.map((Post, idx) => (
+            <PostView Post={Post} key={idx} />
+          ))}
         </View>
         <View style={styles.view3}>
           <BottomNav />

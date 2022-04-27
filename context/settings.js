@@ -73,6 +73,15 @@ export const APP_ICONS = {
         fontSize: 28
       }}
     />
+  ),
+  VIRTICALDOTS: (
+    <AntDesign
+      name="ellipsis1"
+      style={{
+        color: "white",
+        fontSize: 28
+      }}
+    />
   )
 };
 
