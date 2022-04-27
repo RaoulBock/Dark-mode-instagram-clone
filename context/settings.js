@@ -88,7 +88,7 @@ export const APP_ICONS = {
       name="hearto"
       style={{
         color: "white",
-        fontSize: 25
+        fontSize: 20
       }}
     />
   ),
@@ -97,7 +97,7 @@ export const APP_ICONS = {
       name="message1"
       style={{
         color: "white",
-        fontSize: 25
+        fontSize: 20
       }}
     />
   ),
@@ -129,41 +129,47 @@ export const dataset = [
     name: "Raoul Anthony New Bock",
     profilePicture:
       "https://i.kym-cdn.com/entries/icons/facebook/000/034/213/cover2.jpg",
-    userPost: "https://miro.medium.com/max/1400/1*R4mzP3laE4-GVLJSIuV6yg.jpeg"
+    userPost: "https://miro.medium.com/max/1400/1*R4mzP3laE4-GVLJSIuV6yg.jpeg",
+    userPostLike: 140
   },
   {
     id: 2,
     name: "This is not Bock",
     profilePicture:
       "https://pbs.twimg.com/profile_images/863359605086314496/ynhvFRnB_400x400.jpg",
-    userPost: "https://miro.medium.com/max/1400/1*R4mzP3laE4-GVLJSIuV6yg.jpeg"
+    userPost: "https://miro.medium.com/max/1400/1*R4mzP3laE4-GVLJSIuV6yg.jpeg",
+    userPostLike: 10140
   },
   {
     id: 3,
     name: "Why are you Bock",
     profilePicture:
       "https://pbs.twimg.com/profile_images/863359605086314496/ynhvFRnB_400x400.jpg",
-    userPost: "https://miro.medium.com/max/1400/1*R4mzP3laE4-GVLJSIuV6yg.jpeg"
+    userPost: "https://miro.medium.com/max/1400/1*R4mzP3laE4-GVLJSIuV6yg.jpeg",
+    userPostLike: 1400
   },
   {
     id: 4,
     name: "Maaaaan Bock",
     profilePicture:
       "https://pbs.twimg.com/profile_images/863359605086314496/ynhvFRnB_400x400.jpg",
-    userPost: "https://miro.medium.com/max/1400/1*R4mzP3laE4-GVLJSIuV6yg.jpeg"
+    userPost: "https://miro.medium.com/max/1400/1*R4mzP3laE4-GVLJSIuV6yg.jpeg",
+    userPostLike: 1200
   },
   {
     id: 5,
     name: "baddie Bock",
     profilePicture:
       "https://pbs.twimg.com/profile_images/863359605086314496/ynhvFRnB_400x400.jpg",
-    userPost: "https://miro.medium.com/max/1400/1*R4mzP3laE4-GVLJSIuV6yg.jpeg"
+    userPost: "https://miro.medium.com/max/1400/1*R4mzP3laE4-GVLJSIuV6yg.jpeg",
+    userPostLike: 7200
   },
   {
     id: 6,
     name: "pac Bock",
     profilePicture:
       "https://pbs.twimg.com/profile_images/863359605086314496/ynhvFRnB_400x400.jpg",
-    userPost: "https://miro.medium.com/max/1400/1*R4mzP3laE4-GVLJSIuV6yg.jpeg"
+    userPost: "https://miro.medium.com/max/1400/1*R4mzP3laE4-GVLJSIuV6yg.jpeg",
+    userPostLike: 9200
   }
 ];

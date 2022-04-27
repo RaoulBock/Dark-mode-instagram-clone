@@ -1,6 +1,6 @@
 import { StyleSheet, Text, View, TouchableOpacity } from "react-native";
 import React from "react";
-import { APP_ICONS } from "../../context/settings";
+import { APP_ICONS, dataset } from "../../context/settings";
 
 const OptionView = () => {
   return (

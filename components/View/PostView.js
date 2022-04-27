@@ -7,7 +7,7 @@ import {
   ScrollView
 } from "react-native";
 import React from "react";
-import { APP_ICONS } from "../../context/settings";
+import { APP_ICONS, dataset } from "../../context/settings";
 import OptionView from "./OptionView";
 import DoubleClick from "react-native-double-tap";
 
@@ -41,7 +41,7 @@ const PostView = ({ Post, idx }) => {
         <View style={styles.PostViewPosts} onPress={() => console.log("liked")}>
           <DoubleClick
             doubleTap={() => {
-              console.log("double tap");
+              console.log("double tap", Post.id);
             }}
             delay={200}
           >
@@ -53,9 +53,10 @@ const PostView = ({ Post, idx }) => {
             />
           </DoubleClick>
         </View>
-        <View style={{ marginTop: 20 }}>
+        <View style={{ marginTop: 35 }}>
           <OptionView />
         </View>
+        <Text style={styles.Liketext}>{Post.userPostLike} Likes</Text>
       </View>
     </>
   );
@@ -91,5 +92,11 @@ const styles = StyleSheet.create({
   PostViewPosts: {
     width: "100%",
     height: 400
+  },
+  Liketext: {
+    color: "white",
+    marginLeft: 10,
+    fontWeight: "bold",
+    marginTop: 10
   }
 });
