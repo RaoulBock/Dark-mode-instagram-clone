@@ -13,6 +13,7 @@ import HeaderNav from "../components/nav/HeaderNav";
 
 import { StatusDataset } from "../context/settings";
 import { styleProps } from "react-native-web/dist/cjs/modules/forwardedProps";
+import StatusView from "../components/View/StatusView";
 
 const HomeScreen = () => {
   return (
@@ -37,17 +38,8 @@ const HomeScreen = () => {
                 />
                 <Text style={styles.text}>Your status</Text>
               </TouchableOpacity>
-              {StatusDataset.map((Status) => (
-                <TouchableOpacity style={styles.statusView}>
-                  <Image
-                    source={{ uri: Status.image }}
-                    style={styles.statusImage}
-                    key={Status.id}
-                  />
-                  <Text style={styles.text} key={Status.id}>
-                    {Status.name.substring(0, 10)} ...
-                  </Text>
-                </TouchableOpacity>
+              {StatusDataset.map((Status, idx) => (
+                <StatusView Status={Status} key={idx} />
               ))}
             </ScrollView>
           </View>
