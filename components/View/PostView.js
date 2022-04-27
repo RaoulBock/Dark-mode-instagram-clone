@@ -1,22 +1,31 @@
-import { StyleSheet, Text, View, Image, TouchableOpacity } from "react-native";
+import {
+  StyleSheet,
+  Text,
+  View,
+  Image,
+  TouchableOpacity,
+  ScrollView
+} from "react-native";
 import React from "react";
 import { APP_ICONS } from "../../context/settings";
 
 const PostView = ({ Post, idx }) => {
   return (
     <>
-      <View style={{ marginLeft: 10, marginRight: 10 }}>
+      <View>
         <View style={styles.PostViewHeader}>
           <View
             style={{
               flexDirection: "row",
               alignItems: "center",
-              justifyContent: "center"
+              justifyContent: "center",
+              marginLeft: 10,
+              marginRight: 10
             }}
           >
             <Image
               source={{ uri: Post.profilePicture }}
-              style={styles.PostImage}
+              style={styles.PostImageProfilepicture}
             />
             <Text style={styles.text}>{Post.name}</Text>
           </View>
@@ -26,6 +35,13 @@ const PostView = ({ Post, idx }) => {
           >
             {APP_ICONS.VIRTICALDOTS}
           </TouchableOpacity>
+        </View>
+        <View style={styles.PostViewPosts}>
+          <Image
+            source={{ uri: Post.userPost }}
+            key={idx}
+            style={styles.PostImagePosts}
+          />
         </View>
       </View>
     </>
@@ -40,7 +56,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "space-between"
   },
-  PostImage: {
+  PostImageProfilepicture: {
     width: 30,
     height: 30,
     marginTop: 18,
@@ -53,5 +69,14 @@ const styles = StyleSheet.create({
   },
   verticalIcons: {
     marginTop: 18
+  },
+  PostImagePosts: {
+    width: "100%",
+    height: "100%",
+    marginTop: 10
+  },
+  PostViewPosts: {
+    width: "100%",
+    height: 200
   }
 });

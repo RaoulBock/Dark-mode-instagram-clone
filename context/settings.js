@@ -92,36 +92,42 @@ export const dataset = [
     id: 1,
     name: "Raoul Anthony New Bock",
     profilePicture:
-      "https://i.kym-cdn.com/entries/icons/facebook/000/034/213/cover2.jpg"
+      "https://i.kym-cdn.com/entries/icons/facebook/000/034/213/cover2.jpg",
+    userPost: "https://miro.medium.com/max/1400/1*R4mzP3laE4-GVLJSIuV6yg.jpeg"
   },
   {
     id: 2,
     name: "This is not Bock",
     profilePicture:
-      "https://pbs.twimg.com/profile_images/863359605086314496/ynhvFRnB_400x400.jpg"
+      "https://pbs.twimg.com/profile_images/863359605086314496/ynhvFRnB_400x400.jpg",
+    userPost: "https://miro.medium.com/max/1400/1*R4mzP3laE4-GVLJSIuV6yg.jpeg"
   },
   {
     id: 3,
     name: "Why are you Bock",
     profilePicture:
-      "https://pbs.twimg.com/profile_images/863359605086314496/ynhvFRnB_400x400.jpg"
+      "https://pbs.twimg.com/profile_images/863359605086314496/ynhvFRnB_400x400.jpg",
+    userPost: "https://miro.medium.com/max/1400/1*R4mzP3laE4-GVLJSIuV6yg.jpeg"
   },
   {
     id: 4,
     name: "Maaaaan Bock",
     profilePicture:
-      "https://pbs.twimg.com/profile_images/863359605086314496/ynhvFRnB_400x400.jpg"
+      "https://pbs.twimg.com/profile_images/863359605086314496/ynhvFRnB_400x400.jpg",
+    userPost: "https://miro.medium.com/max/1400/1*R4mzP3laE4-GVLJSIuV6yg.jpeg"
   },
   {
     id: 5,
     name: "baddie Bock",
     profilePicture:
-      "https://pbs.twimg.com/profile_images/863359605086314496/ynhvFRnB_400x400.jpg"
+      "https://pbs.twimg.com/profile_images/863359605086314496/ynhvFRnB_400x400.jpg",
+    userPost: "https://miro.medium.com/max/1400/1*R4mzP3laE4-GVLJSIuV6yg.jpeg"
   },
   {
     id: 6,
     name: "pac Bock",
     profilePicture:
-      "https://pbs.twimg.com/profile_images/863359605086314496/ynhvFRnB_400x400.jpg"
+      "https://pbs.twimg.com/profile_images/863359605086314496/ynhvFRnB_400x400.jpg",
+    userPost: "https://miro.medium.com/max/1400/1*R4mzP3laE4-GVLJSIuV6yg.jpeg"
   }
 ];

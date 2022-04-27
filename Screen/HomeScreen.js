@@ -24,29 +24,31 @@ const HomeScreen = () => {
           <HeaderNav />
         </View>
         <View style={styles.view2}>
-          <View>
-            <ScrollView
-              horizontal
-              showsHorizontalScrollIndicator={false}
-              style={styles.statusView}
-            >
-              <TouchableOpacity style={{ marginLeft: 1 }}>
-                <Image
-                  source={{
-                    uri: "https://thumbs.dreamstime.com/b/default-avatar-profile-image-vector-social-media-user-icon-potrait-182347582.jpg"
-                  }}
-                  style={styles.statusImage}
-                />
-                <Text style={styles.text}>Your status</Text>
-              </TouchableOpacity>
-              {dataset.map((Status, idx) => (
-                <StatusView Status={Status} key={idx} />
-              ))}
-            </ScrollView>
-          </View>
-          {dataset.map((Post, idx) => (
-            <PostView Post={Post} key={idx} />
-          ))}
+          <ScrollView>
+            <View>
+              <ScrollView
+                horizontal
+                showsHorizontalScrollIndicator={false}
+                style={styles.statusView}
+              >
+                <TouchableOpacity style={{ marginLeft: 1 }}>
+                  <Image
+                    source={{
+                      uri: "https://thumbs.dreamstime.com/b/default-avatar-profile-image-vector-social-media-user-icon-potrait-182347582.jpg"
+                    }}
+                    style={styles.statusImage}
+                  />
+                  <Text style={styles.text}>Your status</Text>
+                </TouchableOpacity>
+                {dataset.map((Status, idx) => (
+                  <StatusView Status={Status} key={idx} />
+                ))}
+              </ScrollView>
+            </View>
+            {dataset.map((Post, idx) => (
+              <PostView Post={Post} key={idx} />
+            ))}
+          </ScrollView>
         </View>
         <View style={styles.view3}>
           <BottomNav />
