@@ -81,36 +81,36 @@ export const APP_STYLE = {};
 export const StatusDataset = [
   {
     id: 1,
-    name: "Raoul Bock",
+    name: "Raoul Anthony New Bock",
     image: "https://i.kym-cdn.com/entries/icons/facebook/000/034/213/cover2.jpg"
   },
   {
     id: 2,
-    name: "Anthony Bock",
+    name: "This is not Bock",
     image:
       "https://pbs.twimg.com/profile_images/863359605086314496/ynhvFRnB_400x400.jpg"
   },
   {
     id: 3,
-    name: "Anthony Bock",
+    name: "Why are you Bock",
     image:
       "https://pbs.twimg.com/profile_images/863359605086314496/ynhvFRnB_400x400.jpg"
   },
   {
     id: 4,
-    name: "Anthony Bock",
+    name: "Maaaaan Bock",
     image:
       "https://pbs.twimg.com/profile_images/863359605086314496/ynhvFRnB_400x400.jpg"
   },
   {
     id: 5,
-    name: "Anthony Bock",
+    name: "baddie Bock",
     image:
       "https://pbs.twimg.com/profile_images/863359605086314496/ynhvFRnB_400x400.jpg"
   },
   {
     id: 6,
-    name: "Anthony Bock",
+    name: "pac Bock",
     image:
       "https://pbs.twimg.com/profile_images/863359605086314496/ynhvFRnB_400x400.jpg"
   }

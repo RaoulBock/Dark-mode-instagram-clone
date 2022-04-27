@@ -45,7 +45,7 @@ const HomeScreen = () => {
                     key={Status.id}
                   />
                   <Text style={styles.text} key={Status.id}>
-                    {Status.name}
+                    {Status.name.substring(0, 10)} ...
                   </Text>
                 </TouchableOpacity>
               ))}
