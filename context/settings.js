@@ -31,7 +31,7 @@ export const APP_ICONS = {
   ),
   HEART: (
     <AntDesign
-      name="heart"
+      name="hearto"
       style={{
         color: "gray",
         fontSize: 28
