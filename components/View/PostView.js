@@ -12,7 +12,9 @@ import OptionView from "./OptionView";
 import DoubleClick from "react-native-double-tap";
 
 const PostView = ({ Post, idx }) => {
-  const [texts, setTexts] = React.useState(Post.caption.substring(0, 100));
+  const [texts, setTexts, liked, setLiked] = React.useState(
+    Post.caption.substring(0, 100)
+  );
   return (
     <>
       <View>
@@ -42,7 +44,7 @@ const PostView = ({ Post, idx }) => {
         <View style={styles.PostViewPosts} onPress={() => console.log("liked")}>
           <DoubleClick
             doubleTap={() => {
-              console.log("double tap", Post.id);
+              setLiked(!liked);
             }}
             delay={200}
           >

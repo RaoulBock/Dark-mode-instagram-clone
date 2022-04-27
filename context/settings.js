@@ -118,6 +118,15 @@ export const APP_ICONS = {
         fontSize: 22
       }}
     />
+  ),
+  LIKED: (
+    <AntDesign
+      name="heart"
+      style={{
+        color: "red",
+        fontSize: 22
+      }}
+    />
   )
 };
 

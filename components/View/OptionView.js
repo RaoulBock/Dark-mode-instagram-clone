@@ -1,8 +1,10 @@
 import { StyleSheet, Text, View, TouchableOpacity } from "react-native";
 import React from "react";
 import { APP_ICONS, dataset } from "../../context/settings";
+import { AppContext } from "../../context/AppProvider";
 
 const OptionView = () => {
+  const { liked, setLiked } = React.useContext(AppContext);
   return (
     <>
       <View style={styles.OptionView}>
@@ -14,7 +16,15 @@ const OptionView = () => {
             width: "35%"
           }}
         >
-          <TouchableOpacity>{APP_ICONS.OPTIONSHEART}</TouchableOpacity>
+          {liked === true ? (
+            <TouchableOpacity onPress={() => setLiked(!liked)}>
+              {APP_ICONS.LIKED}
+            </TouchableOpacity>
+          ) : (
+            <TouchableOpacity onPress={() => setLiked(!liked)}>
+              {APP_ICONS.OPTIONSHEART}
+            </TouchableOpacity>
+          )}
           <TouchableOpacity>{APP_ICONS.OPTIONSMESSAGE}</TouchableOpacity>
           <TouchableOpacity>{APP_ICONS.OPTIONSSHARE}</TouchableOpacity>
         </View>
